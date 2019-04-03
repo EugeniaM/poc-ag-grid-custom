@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-balham.css";
+
+html, body {
+    font-family: Roboto;
+}
+
+.ag-theme-balham {
+    font-family: Roboto; 
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #575757;
+
+    .ag-root {
+        border: none;
+    }
+
+    .ag-header {
+        background: #225cb0;
+        color: #fff;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        border: none;
+    }
+
+    .ag-row {
+        border: none;
+    }
+
+    .ag-row-even {
+        background: #f6f6f6;
+    }
+
+    .ag-row-odd {
+        background: #fff;
+    }
+
+    .ag-cell, .ag-ltr .ag-cell {
+        border: none;
+        border-right: 1px solid #e5e5e5;
+    }
+
+    & .ag-header-cell::after, & .ag-header-group-cell::after {
+        height: 100%;
+        margin-top: 0;
+        border-right: 1px solid #d8d8d8;
+        opacity: .15;
+    }
+
+    .ag-icon-asc {
+        background-image: url('./assets/icons/download.svg');
+    }
+}
